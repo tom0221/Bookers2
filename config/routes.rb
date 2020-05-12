@@ -5,11 +5,11 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+#ページを新たに作る第一歩。
   get '/home/about' => 'homes#about'
 
   get 'users/follower' => 'users#show_follow'
   get 'users/followed' => 'users#show_follower'
-
 
 
   resources :users, only: [:create, :index, :show, :edit, :update]
