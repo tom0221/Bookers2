@@ -1,5 +1,5 @@
 class FavoritesController < ApplicationController
-  #いいね機能のコントローラ
+  #いいね機能のコントローラー
   def create
   	book = Book.find(params[:book_id])
   	favorite = current_user.favorites.new(book_id: book.id)

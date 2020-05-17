@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #root to: 'top#index'
   #root 'top#index'
-  root to: 'homes#top'
+  root to: 'homes#top'#ルートパス
 
   devise_for :users
 

@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-	before_action :authenticate_user!#ログインしてなければ、見れないようにする。
+	before_action :authenticate_user!#ログインをしてなければ、見れないようにする。
 
   def new
   end
