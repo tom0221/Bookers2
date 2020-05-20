@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   def index
-  	@users = User.all
+  	@users = User.all#user一覧を出してる
   	@book = Book.new#データを新規登録するために、インスタンス作成
     @user = current_user
   end
