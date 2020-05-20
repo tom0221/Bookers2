@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def show
-  	@user = User.find(params[:id])#userを1件取ってくる。
+  	@user = User.find(params[:id])#userを1件取り出し。
     @books = Book.all
   	@book = Book.new
   end
