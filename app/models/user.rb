@@ -3,7 +3,7 @@ class User < ApplicationRecord　#user関連のモデル
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  #バリデーション
+  #バリデーション追加
   validates :name, presence: true,
                    length: { minimum: 2, maximum: 20 }
   validates :introduction, length: { maximum: 50 }
